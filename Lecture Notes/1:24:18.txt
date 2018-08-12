@@ -1,0 +1,88 @@
+/* NOTES::
+
+make a constructor */
+struct Node
+{
+	string value;
+	Node* next;
+};
+
+class LinkedList
+{
+	public:
+		LinkedList()
+		{
+			head = nullptr;
+		}
+		
+		void printItems()
+		{
+			Node* p=head;
+			
+			while(p!=nullptr)
+			{
+				cout<<p->value;
+				p = p-> next;
+			}
+		}
+		
+		void addToFront(string v)
+		{
+			Node* p = head;
+			Node* a = new Node;
+			a->value=v;
+			head=a;
+			a->next=p;
+		}
+		
+		void addToBack(string v)
+		{
+			Node* p = head;
+			
+			if(head==nullptr)
+			{
+				addToFront(val);
+				return;
+			}
+			
+			while(cur->next=nullptr)
+			{
+				cur=cur->next;
+			}
+			
+			cur->next = new Node;
+			cur->next->=nullptr;
+			cur->next->value=val;
+		}
+		
+		void deleteItem(int val)
+		{
+			
+		}
+		
+};
+
+
+
+
+
+struct Node
+{
+	int data;
+	Node* next;
+};
+
+Node* head;
+
+while (head != nullptr)	//Loop implementation is WRONG!!!!!
+{
+	cout << head->data << endl;
+	head = head->next;
+}
+
+
+for(node* p = head; p!=nullptr; p = p->next)
+{
+	cout << p->data << endl;
+}
+

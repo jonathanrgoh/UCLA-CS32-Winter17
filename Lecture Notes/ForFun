@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+
+Class x
+{
+	//Creates an x
+	x();
+	setX();
+};
+
+Class o 
+{
+	//Creates an o
+	o();
+	setO();
+};
+
+Class board
+{
+public:
+	board();
+	drawBoard();
+	clearBoard();
+
+private:
+	char m_array[];
+	
+};
+
+Class test
+{
+	//Does checks, whether there is a winner
+	
+};
+
+
+int main()
+{
+	
+}

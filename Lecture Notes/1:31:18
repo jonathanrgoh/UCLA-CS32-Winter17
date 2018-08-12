@@ -1,0 +1,101 @@
+/*
+Stack
+=====
+Create an empty stack
+Push an item on the stack
+Pop an item off the stack
+Look at the top item on the stack
+Is the stack empty?
+------
+
+How many items are in the stack?
+	.size function
+
+Look at any item on the stack
+	hard to find any item because you must pop off items to find the item that you want
+
+LIFO (Last In First Out) data structure
+
+
+*/
+
+#include <stack>
+using namespace std;
+
+int main()
+{
+	stack<int> s;
+	s.push(10);
+	s.push(20);
+
+	int n = s.top();
+	s.pop();
+	if(!s.empty())
+	{
+		cout<<s.size()<<endl;
+
+	}
+}
+
+
+
+
+
+
+
+/*
+Queue
+=====
+Create an empty Queue
+Enqueue an item
+Dequeue an item
+Look at the front item in the queue
+Is the queue empty?
+------
+
+How many items are in the queue?
+	.size function
+
+Look at the back item in the queue
+
+Look at any item on the stack
+	hard to find any item because you must pop off items to find the item that you want
+
+FIFO (First In First Out) data structure
+
+
+*/
+
+#include <queue>
+using namespace std;
+
+int main()
+{
+	queue<int> q;
+	q.push(10);
+	q.push(20);
+
+	int n = q.front();
+	q.pop();
+
+	if(!q.empty())
+	{
+		cout<<q.size()<<endl;
+
+	}
+
+	int x = q.back(0;)
+}
+
+name = 'Smith' and (salary>=70000 or dept = 'IT')
+
+prefix:
+	f(x,y,z)
+	add(sub(8, div(6,2)))
+	+ - 8 / 6 2 1
+
+infix:
+	8-6/2+1
+
+postfix:
+	8 6 2 / - 1 +
